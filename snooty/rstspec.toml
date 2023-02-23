@@ -1,4 +1,4 @@
-data_fields = ["source_page_template", "assets"]
+_fields = ["source_page_template", "assets"]
 
 [meta]
 version = 0
@@ -894,6 +894,48 @@ example = """.. entry:: ${0: string}
 """
 
 ###### Roles
+
+[role."v1.13"]
+help = """Link to ..."""
+type = {link = "https://www.mongodb.com/docs/kubernetes-operator/v1.2%s"}
+
+
+[role."v1.13"]
+help = """Link to ..."""
+type = {link = "https://www.mongodb.com/docs/kubernetes-operator/v1.13%s"}
+
+[role.github]
+help = """Link to GitHub.com."""
+type = {link = "https://github.com%s"}
+
+[role.github-raw]
+help = """Link to raw.githubusercontent"""
+type = {link = "https://raw.githubusercontent.com%s"}
+
+[role.mdb-github]
+help = """Link to the mongodb GitHub pages site."""
+type = {link = "https://mongodb.github.io%s"}
+
+[role.npmjs]
+help = """Link to the Amazon AWS documentation."""
+type = {link = "https://www.npmjs.com/package%s"}
+
+[role.cc]
+help = """Link to Creative Commons."""
+type = {link = "http://creativecommons.org/licenses%s"}
+
+[role.aws-blogs]
+help = """Link to the Amazon AWS blogs."""
+type = {link = "http://aws.amazon.com%s"}
+
+[role.argo-cd]
+help = """Link to the Amazon AWS documentation."""
+type = {link = "https://argoproj.github.io/%s"}
+
+[role.gatekeeper]
+help = """Link to the Amazon AWS documentation."""
+type = {link = "https://open-policy-agent.github.io/gatekeeper/website/docs%s"}
+
 [role.kbd]
 help = """Mark a sequence of keystrokes."""
 type = "text"
